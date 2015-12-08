@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>POS TAGGER</title>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+      <script>
+
+        var text="the dog walked very slowly."
+        var pos=  $.getJSON("http://cooper-union-words-proxy.herokuapp.com/words?phrase="+ text)
+
+
+
+        </script>
+
+      <script> console.log(pos) </script>
+
+</head>
+<body>
+
+
+  <div id="results">
+   <ul>
+   <li><a href="#">First result</a></li>
+   <li><a href="#">Second result</a></li>
+   <li><a href="#">Third result</a></li>
+   <li><a href="#">More...</a></li>
+   </ul>
+  </div>
+
+
+</body>
+
+</html>
